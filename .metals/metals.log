@@ -1,0 +1,6 @@
+2024.01.04 11:48:13 INFO  Started: Metals version 1.2.0 in folders '/Users/lm210306/Documents/Projects/ai_saas' for client Visual Studio Code 1.85.1.
+2024.01.04 11:48:13 WARN  Build server is not auto-connectable.
+2024.01.04 11:48:13 WARN  no build tool detected in workspace '/Users/lm210306/Documents/Projects/ai_saas'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2024.01.04 11:58:23 INFO  Shutting down server
+2024.01.04 11:58:23 INFO  shutting down Metals
+2024.01.04 11:58:23 INFO  Exiting server
