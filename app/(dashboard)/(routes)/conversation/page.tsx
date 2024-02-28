@@ -6,6 +6,8 @@ import { useForm } from "react-hook-form";
 import formSchema from "./constants";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form  } from "react-hook-form";
+import { FormControl, FormField, FormItem } from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
 
 
 const ConversationPage = () => {
@@ -44,10 +46,22 @@ const ConversationPage = () => {
                           focus-within:shadow-sm
                           grid
                           grid-cols-12
-                          gap-2
-                          "
-                        >
-
+                          gap-2">
+                        <FormField
+                            name = "prompt"
+                            render={({ field }) => (
+                                <FormItem className="col-span-12 lg:col-span-10">
+                                    <FormControl className="m-0 p-0">
+                                        <Input 
+                                        className="border-0 outline-none focus-visible:ring-0 
+                                        focus-visible:ring-transparent"
+                                        disabled={isLoading}
+                                        placeholder="How do I calculate radius of circle"
+                                        {...field}/>  
+                                    </FormControl>
+                                </FormItem>
+                            )}
+                        />
                         </form>
                     </Form>
                 </div>
